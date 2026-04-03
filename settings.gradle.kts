@@ -46,7 +46,7 @@ include("factions:SaberFactions")
 include("factions:FactionsUUID")
 include("factions:FactionsUUID-Legacy")
 include("factions:FactionsUUID-4")
-include("factions:FactionsX")
+//include("factions:FactionsX")
 
 // Factions Handler
 include("factions:handler")

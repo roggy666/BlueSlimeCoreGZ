@@ -43,12 +43,6 @@ public final class FactionsHelper {
 
         try {
             PluginManager manager = Bukkit.getPluginManager();
-            if (manager.isPluginEnabled("FactionsX")) {
-                printHookInfo("FactionsX", "FactionsX");
-                this.factionsHandler = new FactionsHandler_X();
-                return this.factionsHandler;
-            }
-
             if (manager.isPluginEnabled("LegacyFactions")) {
                 printHookInfo("LegacyFactions", "Legacy Factions");
                 this.factionsHandler = new FactionsHandler_Legacy();

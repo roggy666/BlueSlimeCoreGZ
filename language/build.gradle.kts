@@ -1,6 +1,7 @@
 repositories {
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
-    maven("https://oss.sonatype.org/service/local/repositories/snapshots/content/")
+    maven("https://maven.elmakers.com/repository/")
+    maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
     maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
 }
 

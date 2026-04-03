@@ -12,7 +12,7 @@ dependencies {
     implementation(project(":factions:FactionsUUID"))
     implementation(project(":factions:FactionsUUID-Legacy"))
     implementation(project(":factions:FactionsUUID-4"))
-    implementation(project(":factions:FactionsX"))
+    //implementation(project(":factions:FactionsX"))
     implementation(project(":factions:LegacyFactions"))
     implementation(project(":factions:MassiveCore-Factions"))
     implementation(project(":factions:SaberFactions"))

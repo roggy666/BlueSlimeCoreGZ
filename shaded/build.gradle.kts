@@ -6,6 +6,7 @@ plugins {
 }
 
 repositories {
+    mavenLocal()
     maven("https://nexus.sirblobman.xyz/public/")
     maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
 }
