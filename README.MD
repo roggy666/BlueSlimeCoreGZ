@@ -53,3 +53,5 @@ Output jar: `core/build/libs/BlueSlimeCore-*.jar`
 | 1_21_R5     | 1.21.8            | :x:                |
 | 1_21_R6     | 1.21.10           | :white_check_mark: |
 | 1_21_R7     | 1.21.11           | :white_check_mark: |
+| -           | 26.1              | :white_check_mark: |
+| -           | 26.1.1            | :white_check_mark: |
