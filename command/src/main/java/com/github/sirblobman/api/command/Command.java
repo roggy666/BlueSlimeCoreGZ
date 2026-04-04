@@ -156,7 +156,16 @@ public abstract class Command implements TabExecutor {
         } else {
             printDebug("Attempting to register with legacy Spigot method first...");
 
-            PluginCommand pluginCommand = plugin.getCommand(commandName);
+            PluginCommand pluginCommand;
+            try {
+                pluginCommand = plugin.getCommand(commandName);
+            } catch (UnsupportedOperationException e) {
+                printDebug("getCommand() not available during startup, falling back to Paper registration...");
+                CommandData commandData = loadCommandData(commandName);
+                PaperHelper.registerCommand(plugin, commandData);
+                printDebug("Registered command '" + commandName + "' via Paper command map fallback.");
+                return;
+            }
             if (pluginCommand == null) {
                 printDebug("Plugin command '" + commandName + "' is not available.");
                 return;

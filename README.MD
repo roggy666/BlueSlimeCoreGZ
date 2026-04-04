@@ -8,6 +8,8 @@ Fork of [BlueSlimeCore](https://github.com/SirBlobman/BlueSlimeCore) with Minecr
 - Fixed Sonatype OSS repository URLs
 - Patched XSeries dependency for 26.1 version support
 - Removed FactionsX module (dead project, unavailable dependency)
+- Added `26.1` / `26.1.1` to `VersionUtility.getNmsVersion()` mappings
+- Fixed `Command.registerCustom()` — added try-catch fallback to Paper command registration when `getCommand()` throws `UnsupportedOperationException` during startup on Paper 26.1
 
 ## Prerequisites
 
